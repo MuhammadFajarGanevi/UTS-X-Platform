@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Nama Makanan -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Makanan"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Layout Horizontal untuk Kontrol Kuantitas -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <!-- Tombol Minus -->
+        <ImageButton
+            android:id="@+id/buttonMinus2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Kurangi Jumlah"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_minus"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Jumlah Item -->
+        <TextView
+            android:id="@+id/textViewQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Tombol Plus -->
+        <ImageButton
+            android:id="@+id/buttonPlus2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Tambah Jumlah"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_plus"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <!-- Harga -->
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga: Rp 0"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Garis Bawah Pemisah -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>
